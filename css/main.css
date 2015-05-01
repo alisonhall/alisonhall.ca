@@ -1,0 +1,549 @@
+/**********************************
+GENERAL
+***********************************/
+
+* {
+	/*-webkit-box-sizing: content-box;*/
+	/*-moz-box-sizing: content-box;*/
+	/*box-sizing: content-box;*/
+	/*border: 1px solid red;*/
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+#wrapper {
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+h3 {
+	margin: 0 0 1em 0;
+}
+
+
+
+
+
+/**********************************
+HEADING and NAVIGATION
+***********************************/
+
+header {
+	display: block;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+	border: none;
+}
+header #logo {
+	float: left;
+	text-align: center;
+	margin: 1% 5%;
+}
+header h1 {
+	font-family: 'Changa One', sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+header h2 {
+	font-size: 1em;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+.mainNav {
+	float: right;
+	text-align: center;
+	font-size: 1.1em;
+	padding: 1% 5%;
+	margin: 20px 0 0;
+}
+.mainNav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+.mainNav li {
+	display: inline-block;
+	position: relative;
+}
+.mainNav a {
+	font-weight: 800;
+	padding: 15px 20px;
+}
+
+/*Sub-Menu*/
+.mainNav li:hover .subNav {
+	display: block;
+}
+.subNav {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8em;
+	display: none;
+	left: 0;
+	top: 30px;
+	width: 200px;
+	z-index: 400;
+	text-align: left;
+}
+.subNav li {
+	display: block;
+	margin: 0;
+	padding: 5%;
+}
+.subNav a {
+	margin: 0;
+	padding: 0;
+}
+
+
+@media screen and (max-width: 686px) {
+	header #logo {
+		float: none;
+		text-align: center;
+		margin: 0;
+	}
+	header h2 {
+		margin: 0 0 10px;
+	}
+	.mainNav {
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+	.mainNav a {
+		padding: 0;
+		margin: 0;
+	}
+	.mainNav li {
+		padding: 0 3%;
+		margin: 10px 0 0;
+	}
+}
+@media screen and (max-width: 450px) {
+	.mainNav li:hover .subNav {
+		display: none;
+	}
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+}
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+.social-icon:hover {
+	opacity: 0.7;
+}
+
+
+
+
+
+/**********************************
+PAGE: HOME PORTFOLIO
+***********************************/
+.bubble {
+	z-index: -100;
+	opacity: 0.6;
+}
+#introduction {
+	margin: 0 auto;
+	width: 60%;
+}
+#introduction h1 {
+	font-size: 2.5em;
+}
+#introduction h1, 
+#introduction h2 {
+	display: block;
+	margin: 0;
+	padding: 3% 0;
+	text-align: center;
+}
+#gallery {
+	padding: 50px 0;
+	list-style: none;
+	max-width: 1460px;
+	margin: 0 auto;
+	text-align: center;
+}
+#gallery a {
+	display: block;
+	height: 300px;
+}
+#gallery .circle {
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	margin: 2%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+#gallery .circle img {
+	height: 300px;
+	opacity: 1;
+}
+#gallery .circle p {
+	display: none;
+}
+#gallery .circle:hover {
+	height: 310px;
+	width: 310px;
+	margin: 1.65%;
+	box-shadow: 5px 5px 5px #0C4769;
+}
+#gallery .circle:hover p {
+	display: block;
+	float: left;
+	width: 80%;
+	top: -170px;
+	left: 35px;
+	font-size: 14px;
+	position: relative;
+	font-weight: normal;
+
+}
+#gallery .circle:hover p:nth-child(2n+2) {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+#gallery .circle:hover img {
+	opacity: 0.3;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+	#introduction {
+		width: 80%;
+	}
+	#gallery {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 686px) {
+	#gallery .circle {
+		border-radius: 0%;
+	}
+}
+@media screen and (max-width: 400px) {
+	#gallery .circle {
+		width: 95%;
+		margin: 1%;
+	}
+	#gallery .circle:hover {
+		width: 95%;
+		margin: 1%;
+		box-shadow: none;
+	}
+}
+@media screen and (max-width: 285px) {
+	#gallery .circle:hover p {
+		width: 100%;
+		top: -300px;
+		left: 5px;
+	}
+}
+
+
+/**********************************
+PAGE: PROJECT INFO
+***********************************/
+
+#projectContent .introduction {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+#projectContent .introduction h2 {
+	padding: 3%;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8em;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+}
+#projectContent .introduction h3 {
+	margin: 0 3%;
+	font-size: 1.2em;
+	font-weight: bold;
+	float: left;
+	width: 44%;
+	text-align: right;
+}
+#projectContent .introduction p {
+	text-align: right;
+	float: left;
+	width: 44%;
+	margin: 0 3%;
+}
+#projectContent .introduction img {
+	float: left;
+	margin: -2% 0 0 0;
+	padding-bottom: 5%;
+}
+#projectContent img {
+	height: 100px;
+}
+#projectContent section h4 {
+	float: left;
+	clear: both;
+	text-align: center;
+}
+#projectContent section p {
+	display: inline-block;
+	width: 60%;
+	clear: both;
+}
+#projectContent .projectDetails p {
+	width: 100%;
+}
+#projectContent section aside {
+	width: 35%;
+}
+#projectContent .introduction, 
+#projectContent .set1, 
+#projectContent .set2 {
+	padding: 0;
+	margin: 0 auto;
+}
+#projectContent .set1,
+#projectContent .set2 {
+	padding: 5% 15%;
+}
+#projectContent .set1 p,
+#projectContent .set2 aside {
+	float: left;
+	text-align: right;
+}
+#projectContent .set1 aside,
+#projectContent .set2 p {
+	float: right;
+	text-align: left;
+}
+
+
+@media screen and (max-width: 686px) {
+	#projectContent .introduction h3,
+	#projectContent .introduction p,
+	#projectContent .introduction img {
+		float: none;
+		display:block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#projectContent .introduction h3,
+	#projectContent .introduction p {
+		width: 100%;
+	}
+	#projectContent .introduction img {
+		float: none;
+		display: block;
+		text-align: center;
+		padding: 5% 0;
+	}
+	#projectContent .set1,
+	#projectContent .set2 {
+		padding: 5%;
+	}
+	#projectContent .set1 p,
+	#projectContent .set2 aside,
+	#projectContent .set1 aside,
+	#projectContent .set2 p {
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+	}
+}
+
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+#aboutsection {
+	opacity: 1;
+	padding: 10% 20%;
+	width: 80%;
+	float: left;
+	margin: 5% auto;
+}
+.profile-photo {
+	display: inline-block;
+	max-width: 150px;
+	margin: -20px 0 0 0;
+	padding: 0 5%;
+	border-radius: 100%;
+	float: left;
+}
+
+
+@media screen and (max-width: 686px) {
+	#aboutsection,
+	.profile-photo {
+		float: none;
+		display: block;
+	}
+	#aboutsection {
+		margin-top: 30px;
+	}
+}
+
+
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+#contactPrimary {
+	opacity: 1;
+	width: 40%;
+	float: left;
+	padding: 5%;
+	margin: 3%;
+}
+#contactSecondary {
+	opacity: 1;
+	width: 30%;
+	float: right;
+	padding: 5% 0% 5% 3%;
+	margin: 3%;
+}
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+.contact-info li.phone a {
+	background-image: url('../img/phone.png');
+}
+.contact-info li.mail a {
+	background-image: url('../img/mail.png');
+}
+.contact-info li.twitter a {
+	background-image: url('../img/twitter.png');
+}
+
+
+@media screen and (max-width: 686px) {
+	#contactPrimary,
+	#contactSecondary {
+		float: none;
+		display: block;
+		width: 80%;
+		padding: 3%;
+		margin: 3%;
+	}
+}
+
+
+
+
+
+/**********************************
+COLORS
+***********************************/
+/* site body */
+body {
+	background-color: white;
+	color: black;
+}
+/* green header */
+header {
+	background: #CBEAFC;
+	border-bottom: 15px solid #0C4769;
+}
+/* nav background on mobile */
+nav {
+	background: #0C4769;
+}
+.subNav {
+	background: white;
+}
+/* logo text */
+header h1, 
+header h2 {
+	color: #3B8584;
+}
+/* links */
+a {
+	color: #0C4769;
+}
+/* nav link */
+nav a, nav a:visited {
+	color: #3B8584;
+}
+/* selected nav link */
+nav a.selected, 
+nav a:hover {
+	color: #77BA97;
+}
+#introduction h1 {
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px #0C4769;
+}
+#gallery .circle {
+	color: #555;
+	background-color: black;
+	border: 3px solid #0C4769;
+}
+#gallery .circle:hover p {
+	color: white;
+}
+#projectContent .set1 {
+	background: #F1EFE2;
+}
+#projectContent .set2, 
+#projectContent .introduction section {
+	background: #CBEAFC;
+}
+#aboutsection {
+	background-color: #f5f5f5;
+}
+#contactPrimary {
+	background-color: #f5f5f5;
+}
+#contactSecondary {
+	background-color: #f5f5f5;
+}
+
+
+/**********************************
+CLEARFIX
+***********************************/
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
