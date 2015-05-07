@@ -6,84 +6,524 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="script/fancybox/jquery.fancybox.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<header class="clearfix">
 			<a href="index.html" id="logo">
 				<h1>Alison Hall</h1>
-				<h2>Web Designer</h2>
+				<h2>Front End Web Designer and Developer</h2>
 			</a>
 			<nav>
 				<ul class="mainNav">
-					<li><a href="index.html" class="selected">Portfolio</a>
-						<ul class="subNav">
-							<li><a href="projects/project1.html">Architrave Design website</a></li>
-							<li><a href="projects/project2.html">Cuda website</a></li>
-							<li><a href="projects/project3.html">Responsive website</a></li>
-							<li><a href="projects/project4.html">Weather Icon Set</a></li>
-							<li><a href="projects/project5.html">Products Page website</a></li>
-						</ul>
-					</li>
+					<li><a href="index.html" class="selected">Portfolio</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<div id="wrapper">
-			<section id="introduction">
-				<h1>Alison Hall</h1>
-				<h2>Front End Web Designer and Developer</h2>
-				<p>Hi! Welcome to my portfolio website!</p>
-				<p>While I am still at school, I am willing to work from home on smaller projects. I am also currently looking for a job during the summer. If you're interested in contacting me, please email me at <a href="mailto:alison@akhall.com">alison@akhall.com</a>.</p>
+			<section id="introductionImg" class="clearfix">
+				<div id="introductionGradient" class="transparentWhiteGradient clearfix">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.transparentWhiteGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<div id="introduction">
+						<h1>Alison Hall</h1>
+						<h2>I am a <span id="js-rotating">Web Designer, Web Developer</span>.</h2>
+						<p>Hi! Welcome to my portfolio website!</p>
+						<p>While I am still in school at Humber College, I am willing to work from home on smaller projects. I am also currently looking for summer employment. If you're interested in contacting me, please email me at <a href="mailto:webdesign@alisonhall.ca">webdesign@alisonhall.ca</a>.</p>
+					</div>
+				</div>
 			</section>
-			<section>
-				<ul id="gallery" class="clearfix">
-					<li class="circle2 circle">
-						<a href="projects/project2.html">
-							<img src="images/project2/cuda.jpg" alt="">
-							<p>Cuda website</p>
-							<!-- <p>Lorem ipsum dolor sit amet, nam idque salutatus et, iusto laoreet et usu. Ius at partem senserit splendide, qui habemus praesent expetendis et. In sit purto elitr deserunt. Mei ne etiam ubique maiestatis, quo id eros aperiri repudiandae. Nibh posse dolor eu eos, elit mazim senserit sed ut.</p> -->
+			<section id="content">
+				<section id="projectContent" class="master greenBlueGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.orangeGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section class="introduction clearfix">
+						<h2>Master website</h2>
+						<h3>Creating a website from a given design</h3>
+						<p>April 2, 2015</p>
+						<a href="images/master/masterWebsite.jpg" id="singleImage">
+							<img src="images/master/masterWebsite.jpg">
 						</a>
-					</li>
-					<li class="circle1 circle selected">
-						<a href="projects/project1.html">
-							<img src="images/project1/integrative-architrave.jpg" alt="">
-							<p>Architrave Design website</p>
-							<!-- <p>Lorem ipsum dolor sit amet, nam idque salutatus et, iusto laoreet et usu. Ius at partem senserit splendide, qui habemus praesent expetendis et. In sit purto elitr deserunt. Mei ne etiam ubique maiestatis, quo id eros aperiri repudiandae. Nibh posse dolor eu eos, elit mazim senserit sed ut.</p> -->
+						<button class="showMore">Show Details</button>
+					</section>
+					<section class="accordian">
+						<section class="set2 projectDetails clearfix">
+							<h4>Project Details:</h4>
+							<p>For this assignment, I was provided a PSD for a site, which I was to build as a fluid website. I was not provided a design for the responsive version, so I had to decide what it looked like when it got smaller.</p>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Layout:</h4>
+							<p>This is the site design that I was provided with that I had to reproduce.</p>
+							<aside>
+								<a href="images/master/master.jpg" class="multipleImages">
+									<img src="images/master/master.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<h4>Website:</h4>
+							<p>Click on the thumbnail beside this section to see the final website that I developed.</p>
+							<aside>
+								<a href="http://akhall.com/projects/project26/index.html">
+									<img src="images/master/masterWebsite.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<button class="showLess">Hide Details</button>
+						</section>
+					</section>
+				</section>
+				<section id="projectContent" class="gestureBasedVideo orangeYellowGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.blueGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section class="introduction clearfix">
+						<h2>Gesture Based Video</h2>
+						<h3>Creating a website from a given design</h3>
+						<p>April 8, 2015</p>
+						<a href="images/gestureBasedVideo/gestureBasedVideo.jpg" id="singleImage">
+							<img src="images/gestureBasedVideo/gestureBasedVideo.jpg">
 						</a>
-					</li>
-					<li class="circle3 circle">
-						<a href="projects/project3.html">
-							<img src="images/project3/webProg2.jpg" alt="">
-							<p>Responsive website</p>
-							<!-- <p>Lorem ipsum dolor sit amet, nam idque salutatus et, iusto laoreet et usu. Ius at partem senserit splendide, qui habemus praesent expetendis et. In sit purto elitr deserunt. Mei ne etiam ubique maiestatis, quo id eros aperiri repudiandae. Nibh posse dolor eu eos, elit mazim senserit sed ut.</p> -->
+						<button class="showMore">Show Details</button>
+					</section>
+					<section class="accordian">
+						<section class="set2 projectDetails clearfix">
+							<h4>Project Details:</h4>
+							<p>For this assignment, I was to create a gesture based mobile animation. It was to use masking in Adobe After Effects while using some pre-exsisting matte footage to create a gesture UI animation. </p>
+							<p>I was given some PSDs that I could select some to use as source material.</p>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Provided Sources:</h4>
+							<p>These are the PSDs that I was provided with as a starting point for creating the animation.</p>
+							<aside>
+								<a href="images/gestureBasedVideo/AndroidMaterialDesignHomescreen.jpg" class="multipleImages">
+									<img src="images/gestureBasedVideo/AndroidMaterialDesignHomescreen.jpg">
+								</a>
+								<a href="images/gestureBasedVideo/AndroidMaterialDesignContacts.jpg" class="multipleImages">
+									<img src="images/gestureBasedVideo/AndroidMaterialDesignContacts.jpg">
+								</a>
+								<a href="images/gestureBasedVideo/AndroidMaterialDesign.jpg" class="multipleImages">
+									<img src="images/gestureBasedVideo/AndroidMaterialDesign.jpg">
+								</a>
+								<a href="images/gestureBasedVideo/AndroidMaterialDesignInbox.jpg" class="multipleImages">
+									<img src="images/gestureBasedVideo/AndroidMaterialDesignInbox.jpg">
+								</a>
+								<a href="images/gestureBasedVideo/AndroidMaterialDesignMyFiles.jpg" class="multipleImages">
+									<img src="images/gestureBasedVideo/AndroidMaterialDesignMyFiles.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<h4>Created Source:</h4>
+							<p>This is a PSD that I created to go in the animation.</p>
+							<aside>
+								<a href="images/gestureBasedVideo/AndroidMaterialDesignEmail.jpg" id="singleImage">
+									<img src="images/gestureBasedVideo/AndroidMaterialDesignEmail.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Final Video:</h4>
+							<p>Click on the thumbnail beside this section to see the final video that I created.</p>
+							<aside>
+								<a href="http://akhall.com/projects/project27/nexus_6_1280x800.mp4">
+									<img src="images/gestureBasedVideo/gestureBasedVideo.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<button class="showLess">Hide Details</button>
+						</section>
+					</section>
+				</section>
+				<section id="projectContent" class="liveDataJournal pinkPurpleGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.yellowGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section class="introduction clearfix">
+						<h2>Journal website</h2>
+						<h3>Creating a journal site using live data</h3>
+						<p>February 12, 2015</p>
+						<a href="images/liveDataJournal/journal1.jpg" id="singleImage">
+							<img src="images/liveDataJournal/journal1.jpg">
 						</a>
-					</li>
-					<li class="circle4 circle">
-						<a href="projects/project4.html">
-							<img src="images/project4/iconDesign.jpg" alt="">
-							<p>Weather Icon Set</p>
-							<!-- <p>Lorem ipsum dolor sit amet, nam idque salutatus et, iusto laoreet et usu. Ius at partem senserit splendide, qui habemus praesent expetendis et. In sit purto elitr deserunt. Mei ne etiam ubique maiestatis, quo id eros aperiri repudiandae. Nibh posse dolor eu eos, elit mazim senserit sed ut.</p> -->
+						<button class="showMore">Show Details</button>
+					</section>
+					<section class="accordian">
+						<section class="set2 projectDetails clearfix">
+							<h4>Project Details:</h4>
+							<p>Using cloud services, I was to save data to the cloud, query (search) it, and connect multiple databases with pointers (one-to-one, one-to-many) and relations (many-to-many).  With this, my site would rely on live data.</p>
+							<p>I chose to make a journal site where users could sign up, log in, create multiple journals, create multiple entries for those journals, and edit the entries.</p>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Website:</h4>
+							<p>Click on the thumbnail beside this section to see the website that I developed.</p>
+							<aside>
+								<a href="http://akhall.com/projects/project28/index.html">
+									<img src="images/liveDataJournal/journal1.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<button class="showLess">Hide Details</button>
+						</section>
+					</section>
+				</section>
+				<section id="projectContent" class="designJournal greenYellowGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.orangeGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section class="introduction clearfix">
+						<h2>Journal Design</h2>
+						<h3>Responsive Website Design Project</h3>
+						<p>April 22, 2015</p>
+						<a href="images/designJournal/AlisonHall_Wireframes_1024px_JournalsPage.jpg" id="singleImage">
+							<img src="images/designJournal/AlisonHall_Wireframes_1024px_JournalsPage.jpg">
 						</a>
-					</li>
-					<li class="circle5 circle">
-						<a href="projects/project5.html">
-							<img src="images/project5/productsPage.jpg" alt="">
-							<p>Products Page website</p>
-							<!-- <p>Lorem ipsum dolor sit amet, nam idque salutatus et, iusto laoreet et usu. Ius at partem senserit splendide, qui habemus praesent expetendis et. In sit purto elitr deserunt. Mei ne etiam ubique maiestatis, quo id eros aperiri repudiandae. Nibh posse dolor eu eos, elit mazim senserit sed ut.</p> -->
+						<button class="showMore">Show Details</button>
+					</section>
+					<section class="accordian">
+						<section class="set2 projectDetails clearfix">
+							<h4>Project Details:</h4>
+							<p></p>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Mood Boards:</h4>
+							<p>I created two Moodboards, and decided to use the first one because I liked the idea and design for it better.</p>
+							<aside>
+								<a href="images/designJournal/AlisonHall_Moodboard1.jpg" class="multipleImages">
+									<img src="images/designJournal/AlisonHall_Moodboard1.jpg">
+								</a>
+								<a href="images/designJournal/AlisonHall_Moodboard2.jpg" class="multipleImages">
+									<img src="images/designJournal/AlisonHall_Moodboard2.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<h4>Wireframes:</h4>
+							<p>I created responsive wireframes for 3 pages to help show how the website would look at various sizes. Click on the image beside this to view all of the wireframes.</p>
+							<aside>
+								<a href="http://www.akhall.com/projects/project30/AlisonHall_Wireframes.pdf">
+									<img src="images/designJournal/AlisonHall_Wireframes_1024px_JournalsPage.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Layout Mockups:</h4>
+							<p>In progress</p>
+							<aside>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<button class="showLess">Hide Details</button>
+						</section>
+					</section>
+				</section>
+
+				<section id="projectContent" class="iconDesign purpleBlueGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.pinkGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section class="introduction clearfix">
+						<h2>Weather Icon Set</h2>
+						<h3>Creating and designing a set of icons</h3>
+						<p>February 10, 2015</p>
+						<a href="images/iconDesign/iconDesign.jpg" id="singleImage">
+							<img src="images/iconDesign/iconDesign.jpg">
 						</a>
-					</li>
-				</ul>
+						<button class="showMore">Show Details</button>
+					</section>
+					<section class="accordian">
+						<section class="set2 projectDetails clearfix">
+								<h4>Project Details:</h4>
+								<p>My task for this assignment was to design and create a set of 6 icons that could be used on a website. The focus was to be on simplicity, adapting to scaling, and not over-designing.</p>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Sketches:</h4>
+							<p>These sketches were used to brainstorm how I wanted my icons to be designed.</p>
+							<aside>
+								<a href="images/iconDesign/WEBD Digital Design 2 Icon Design Assignment Sketches.jpg" id="singleImage">
+									<img src="images/iconDesign/WEBD Digital Design 2 Icon Design Assignment Sketches.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<h4>Final:</h4>
+							<p>Click on the thumbnails beside this section to see the final icons that I designed.</p>
+							<aside>
+								<a href="images/iconDesign/TitlePage.png" class="multipleImages">
+									<img src="images/iconDesign/TitlePage.png">
+								</a>
+								<a href="images/iconDesign/Icon1.png" class="multipleImages">
+									<img src="images/iconDesign/Icon1.png">
+								</a>
+								<a href="images/iconDesign/Icon2.png" class="multipleImages">
+									<img src="images/iconDesign/Icon2.png">
+								</a>
+								<a href="images/iconDesign/Icon3.png" class="multipleImages">
+									<img src="images/iconDesign/Icon3.png">
+								</a>
+								<a href="images/iconDesign/Icon4.png" class="multipleImages">
+									<img src="images/iconDesign/Icon4.png">
+								</a>
+								<a href="images/iconDesign/Icon5.png" class="multipleImages">
+									<img src="images/iconDesign/Icon5.png">
+								</a>
+								<a href="images/iconDesign/Icon6.png" class="multipleImages">
+									<img src="images/iconDesign/Icon6.png">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<button class="showLess">Hide Details</button>
+						</section>
+					</section>
+				</section>
+				<section id="projectContent" class="productsPage greenBlueGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.yellowGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section class="introduction clearfix">
+						<h2>Products Page website</h2>
+						<h3>Creating a products page with JavaScript</h3>
+						<p>February 12, 2015</p>
+						<a href="images/productsPage/productsPage.jpg" id="singleImage">
+							<img src="images/productsPage/productsPage.jpg">
+						</a>
+						<button class="showMore">Show Details</button>
+					</section>
+					<section class="accordian">
+						<section class="set2 projectDetails clearfix">
+								<h4>Project Details:</h4>
+								<p>The assignment was to create a Products Page for an ecommerce site. The project requirements were to use Object Oriented structure for your products information, have the products HTML generated via JavaScript, and keep track of the number of the item in stock.</p>
+								<p>The second part to this project is to use live data with Parse.com for storing the product information.</p>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Website 1:</h4>
+							<p>Click on the thumbnail beside this section to see the website for the first part that I developed.</p>
+							<aside>
+								<a href="http://akhall.com/projects/cuda4/index.html">
+									<img src="images/productsPage/productsPage.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<h4>Website 2:</h4>
+							<p>Click on the thumbnail beside this section to see the version of the website that uses live data.</p>
+							<aside>
+								<a href="http://akhall.com/projects/cuda5/index.html">
+									<img src="images/productsPage/productsPage.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<button class="showLess">Hide Details</button>
+						</section>
+					</section>
+				</section>
+				<section id="projectContent" class="architrave pinkPurpleGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.orangeGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section class="introduction clearfix">
+						<h2>Architrave Design website</h2>
+						<h3>Integrative Week Project</h3>
+						<p>November 5, 2014</p>
+						<a href="images/architrave/integrative-architrave.jpg" id="singleImage">
+							<img src="images/architrave/integrative-architrave.jpg">
+						</a>
+						<button class="showMore">Show Details</button>
+					</section>
+					<section class="accordian">
+						<section class="set2 projectDetails clearfix">
+								<h4>Project Details:</h4>
+								<p>This is the integrative week assignment. It was an opportunity to take all the various skills from the classes and put them together into a cohesive project, seeing how HTML, JavaScript, design, motion and process interrelate into a finished product. Within a team of three to four (randomly assigned) we selected a client. We then went through a whole project process from research, ideation, sketching, prototyping and creation.</p>
+								<p>The client we were designing a site for is an architecture firm called Architrave Design, owned by my dad. His old website was simplistic and not responsive.</p>
+								<p>As a group, we split up the roles on designer and developer. For this project, I took on the role of the designer.</p>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Mood Board:</h4>
+							<p>One of the requirements was to keep the logo the same, which meant working with the colours already on it. He also wanted a more modern and clean site, while keeping the fact that he designs traditional homes in mind. Based off of these requirements, I put together this mood board.</p>
+							<aside>
+								<a href="images/architrave/Mood-Board.jpg" id="singleImage">
+									<img src="images/architrave/Mood-Board.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<h4>Site Map:</h4>
+							<p>This site map outlined the pages of the website and the sections to be included on each page.</p>
+							<aside>
+								<a href="images/architrave/Site Map.jpg" id="singleImage">
+									<img src="images/architrave/Site Map.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Layout Mockups:</h4>
+							<p>When keeping to the project requirement of using the 960 grid system, I created this layout to help showcase the projects he has worked on. </p>
+							<aside>
+								<a href="images/architrave/Home Page.jpg" class="multipleImages">
+									<img src="images/architrave/Home Page.jpg">
+								</a>
+								<a href="images/architrave/Projects.jpg" class="multipleImages">
+									<img src="images/architrave/Projects.jpg">
+								</a>
+								<a href="images/architrave/Projects---Modal-Window.jpg" class="multipleImages">
+									<img src="images/architrave/Projects---Modal-Window.jpg">
+								</a>
+								<a href="images/architrave/Reviews.jpg" class="multipleImages">
+									<img src="images/architrave/Reviews.jpg">
+								</a>
+								<a href="images/architrave/About.jpg" class="multipleImages">
+									<img src="images/architrave/About.jpg">
+								</a>
+								<a href="images/architrave/Contact.jpg" class="multipleImages">
+									<img src="images/architrave/Contact.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<h4>Business Cards:</h4>
+							<p>A part of the project was to create 3 business card designs. This is what I came up with.</p>
+							<aside>
+								<a href="images/architrave/Business-Cards-1.jpg" class="multipleImages">
+									<img src="images/architrave/Business-Cards-1.jpg">
+								</a>
+								<a href="images/architrave/Business-Cards-2.jpg" class="multipleImages">
+									<img src="images/architrave/Business-Cards-2.jpg">
+								</a>
+								<a href="images/architrave/Business-Cards-3.jpg" class="multipleImages">
+									<img src="images/architrave/Business-Cards-3.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Website:</h4>
+							<p>My group members worked off of my layouts to code the website. I had only a little input into the code. Click on the thumbnail beside this section to see the final website that was developed.</p>
+							<aside>
+								<a href="http://akhall.com/projects/project8/index.html">
+									<img src="images/architrave/integrative-architrave.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<button class="showLess">Hide Details</button>
+						</section>
+					</section>
+				</section>
+				<section id="projectContent" class="cuda orangeYellowGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.blueGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section class="introduction clearfix">
+						<h2>Cuda website</h2>
+						<h3>Creating a website from a given design</h3>
+						<p>November 25, 2014</p>
+						<a href="images/cuda/cuda.jpg" id="singleImage">
+							<img src="images/cuda/cuda.jpg">
+						</a>
+						<button class="showMore">Show Details</button>
+					</section>
+					<section class="accordian">
+						<section class="set2 projectDetails clearfix">
+							<h4>Project Details:</h4>
+							<p>For this assignment, I was to choose one of the 2 site designs provided. I chose to do the Cuda website design. From the site design, I had to code the website using HTML and CSS, while using semantic markup and proper CSS. I was to have the website be as close to the design as I could make it, and add motion and related effects to it. At this point, I was not concerned with making the website responsive. </p>
+						</section>
+						<section class="set1 clearfix">
+							<h4>Layout:</h4>
+							<p>This is the site design that I was provided with that I had to reproduce.</p>
+							<aside>
+								<a href="images/cuda/design1.png" id="singleImage">
+									<img src="images/cuda/design1.png">
+								</a>
+							</aside>
+						</section>
+						<section class="set2 clearfix">
+							<h4>Website:</h4>
+							<p>Click on the thumbnail beside this section to see the final website that I developed.</p>
+							<aside>
+								<a href="http://akhall.com/projects/project9/index.html">
+									<img src="images/cuda/cuda.jpg">
+								</a>
+							</aside>
+						</section>
+						<section class="set1 clearfix">
+							<button class="showLess">Hide Details</button>
+						</section>
+					</section>
+				</section>
+
+				<section id="allProjects" class="redPinkGradient">
+					<!--[if gte IE 9]
+					<style type="text/css">
+					.yellowGradient {
+					filter: none;
+					}
+					</style>
+					<![endif]-->
+					<section>
+						<p>See all of my school projects from beginning until present time at   
+						<a href="http://www.akhall.com">akhall.com</a> .</p>
+					</section>
+				</section>
 			</section>
 			<footer>
 				<a href="https://twitter.com/alison2351"><img src="images/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
 				<a href="http://facebook.com/alison.hall.2351"><img src="images/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+				<a href="http://ca.linkedin.com/in/alisonhall5"><img src="images/linkedInSquare.png" alt="LinkedIn Logo" class="social-icon"></a>
 				<p>&copy; 2015 Alison Hall.</p>
 			</footer>
 		</div>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="script/scriptBubbles.js"></script>
+		<script type="text/javascript" src="script/fancybox/jquery.fancybox.pack.js"></script>
+		<script src="script/Morphext-2.3.4/dist/morphext.min.js"></script>
+		<script type="text/javascript" src="script/script.js"></script>
+		<!-- <script type="text/javascript" src="script/scriptBubbles.js"></script> -->
+		<script type="text/javascript" src="script/scriptProjects.js"></script>
 	</body>
 </html>

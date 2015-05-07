@@ -7,7 +7,7 @@ $(document).ready(function() {
 		self.image.className = "bubble";
 		self.image.src = imgSrc;
 		self.image.style.position = "absolute";
-		self.image.style.bottom = (Math.random() * 2000 - 500) + "px";
+		self.image.style.bottom = (Math.random() * 2000) + "px";
 		self.image.style.left = Math.random() * 90 + "%";
 		self.image.style.width = Math.random() * 150 + "px";
 		document.getElementById('wrapper').appendChild(self.image);
